@@ -44,7 +44,7 @@ while auth:
                     print("-------------- Commande disponible")
                     print("")
                     print(
-                        "cmdsys                 --------------      Obtenir une documentation des commandes disponible")
+                        "cmdsys               --------------      Obtenir une documentation sur votre système")
                     print(
                         "help                 --------------      Obtenir une documentation des commandes disponible")
                     print(
