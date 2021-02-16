@@ -32,60 +32,60 @@ while auth:
         if password == "root":
             print("")
             print("-------------- Bienvenu "+username +
-                  " à la ligne de command")
+                  " à la ligne de commande")
             print("")
             console = True
 
             while console:
-                command = input("> ")
+                commande = input("> ")
 
-                if command == "help":
+                if commande == "help":
                     print("")
-                    print("-------------- command disponible")
+                    print("-------------- Commande disponible")
                     print("")
                     print(
-                        "cmdsys                 --------------      Obtenir une documentation des commands disponible")
+                        "cmdsys                 --------------      Obtenir une documentation des commandes disponible")
                     print(
-                        "help                 --------------      Obtenir une documentation des commands disponible")
+                        "help                 --------------      Obtenir une documentation des commandes disponible")
                     print(
-                        "logout               --------------      Se deconnecter de la ligne de command")
+                        "logout               --------------      Se deconnecter de la ligne de commande")
                     print(
                         "exit                 --------------      Se deconnecter de l'application")
                     print("")
 
-                elif command == "clear":
+                elif commande == "clear":
                     clear()
-                elif command == "cmdsys":
+                elif commande == "cmdsys":
                     systemcmd('help')
 
-                elif command == "logout":
+                elif commande == "logout":
                     print("")
-                    print("-------------- Deconnexion de la ligne de command.")
+                    print("-------------- Deconnexion de la ligne de commande.")
                     print("")
                     console = False
 
-                elif command == "exit":
+                elif commande == "exit":
                     print("")
-                    print("-------------- Deconnexion de la ligne de command.")
+                    print("-------------- Deconnexion de la ligne de commande.")
                     print("-------------- Deconnexion de l'application")
                     print("")
                     auth = False
                     console = False
 
-                elif command == "":
+                elif commande == "":
                     continue
 
                 else:
                     print("")
-                    print("-------------- command introuvable: "+command)
+                    print("-------------- Commande introuvable: "+commande)
                     print("")
 
         elif password == "help":
             print("")
-            print("-------------- command disponible")
+            print("-------------- Commande disponible")
             print("")
             print(
-                "help                  --------------      Obtenir une documentation des commands disponible")
+                "help                  --------------      Obtenir une documentation des commandes disponible")
             print(
                 "logout                --------------      Se deconnecter de l'application")
             print("")
@@ -111,9 +111,9 @@ while auth:
 
     elif username == "help":
         print("")
-        print("-------------- command disponible")
+        print("-------------- Commande disponible")
         print("")
-        print("help                  --------------      Obtenir une documentation des commands disponible")
+        print("help                  --------------      Obtenir une documentation des commandes disponible")
         print("logout                --------------      Se deconnecter de l'application")
         print("")
 
